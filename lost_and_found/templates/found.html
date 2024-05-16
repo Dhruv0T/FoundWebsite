@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Found Item</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/foundandlost.css') }}">
+</head>
+<body>
+    <div class="form-box">
+        <h1 class="title">Report Found Item</h1>
+        <form class="boxer-container" action="/submitfounditem" method="post">
+            <label class="label" for="item_name">Item Name:</label>
+            <input class="input-field" type="text" id="item_name" name="item_name" required>
+            <label class="label" for="item_description">Item Description:</label>
+            <input class="input-field" id="item_description" name="item_description" required>
+            <label class="label" for="contact_info">Contact Information:</label>
+            <input class="input-field" type="text" id="contact_info" name="contact_info" required>
+            <label class="label" for="location">Location:</label>
+            <input class="input-field" type="text" id="location" name="location" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

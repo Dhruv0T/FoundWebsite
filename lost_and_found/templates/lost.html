@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/foundandlost.css') }}">
+</head>
+<body>
+    <h1 class="header">Report Lost Item</h1> 
+    <form action="/submitlostitem" method="post" class="boxer-container">
+        <label for="item_name" class="label">Item Name:</label>
+        <input type="text" id="item_name" name="item_name" required class="input-field">
+        <label for="item_description" class="label">Item Description:</label>
+        <input id="item_description" name="item_description" required class="input-field">
+        <label for="contact_info" class="label">Contact Information:</label>
+        <input type="text" id="contact_info" name="contact_info" required class="input-field">
+        <label for="location" class="label">Location:</label>
+        <input type="text" id="location" name="location" required class="input-field">
+
+
+        <button type="submit" class="button">Submit</button>
+    </form>
+</body>
+</html>
