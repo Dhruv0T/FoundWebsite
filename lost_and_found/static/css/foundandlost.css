@@ -53,7 +53,7 @@ button[type="submit"] {
     display: block; width: 100%; padding: 10px;
     background-color: #ff4d6b; color: #fff;
     border: none; border-radius: 5px;
-    cursor: pointer; transition: all 0.3s ease-in-out;
+
 }
 
 button[type="submit"]:hover {
