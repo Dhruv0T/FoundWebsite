@@ -5,8 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://DhruvTorney:lostandfound@DhruvTorney.mysql.pythonanywhere-services.com/lost_and_found_db'
 
 db = SQLAlchemy(app)
    
